@@ -20,7 +20,7 @@ st.title("Step 2: Renovations")
 
 
 # Retrieve the OpenAI API Key from secrets
-api_key = apikey
+api_key = st.secrets["apikey"]
 
 # Initialize the OpenAI client with the API key
 client = OpenAI(api_key=api_key)
