@@ -18,7 +18,7 @@ st.text(f"Home valuation {st.session_state.text}% complete")
 
 
 st.title("Step 1: Chat")
-api_key = apikey
+api_key = st.secrets["apikey"]
 client = OpenAI(api_key=api_key)
 
 st.write(
